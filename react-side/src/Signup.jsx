@@ -10,7 +10,7 @@ function Signup(){
     const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://login-app-dz49.onrender.com',{name, email, password})
+        axios.post('https://login-app-dz49.onrender.com/register',{name, email, password})
         .then(
             result => {
                 console.log(result)
