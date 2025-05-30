@@ -3,14 +3,19 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const EmployeesModel = require('./models/employees'); // Assuming you have this model defined
 
+
+const app= express();
+
+app.use(express.json());
+
 app.use(cors({
   origin: 'https://login-app-1-dice.onrender.com',
   methods: ['GET', 'POST'],
   credentials: true
 }));
 
-const app= express();
-app.use(express.json());
+
+
 app.use(cors());
 
 mongoose.connect(process.env.MONGODB_URL);
