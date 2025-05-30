@@ -10,8 +10,7 @@ app.use(express.json());
 
 app.use(cors({
   origin: 'https://login-app-1-dice.onrender.com',
-  methods: ['GET', 'POST'],
-  credentials: true
+  methods: ['GET', 'POST']
 }));
 
 
