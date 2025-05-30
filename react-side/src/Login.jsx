@@ -10,7 +10,8 @@ function Login(){
     const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/login',{email, password})
+        //axios.post('http://localhost:3001/login',{email, password})
+        axios.post('https://login-app-dz49.onrender.com',{email, password})
         .then(result => {
             console.log(result)
             if(result.data.message === 'Login successful'){

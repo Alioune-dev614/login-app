@@ -29,6 +29,7 @@ app.post('/register', (req, res) => {
         .catch(err => res.status(500).json({ error: err.message }));
 })
 
-app.listen(3001, () => {
+const port = process.env.PORT || 3001;
+app.listen(port, () => {
     console.log('Server is running on port 3001');
 })
