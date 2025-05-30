@@ -2,6 +2,8 @@
     text-align: center ;
     border: 5px solid black;
     border-radius: 5%;
+    max-width: 400px;       /* Limite la largeur sur écran large */
+    width: 90vw;            /* Largeur flexible sur petits écrans */
     width:30%;
     height: 50%;
     margin: 0 auto;
